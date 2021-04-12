@@ -6,7 +6,7 @@ else ()
     project(allocator VERSION 0.0.1)
 endif ()
 
-set(BOOST_ROOT C:/boost_1_75_0)
+# set(BOOST_ROOT C:/boost_1_75_0)
 
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
