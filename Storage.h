@@ -3,6 +3,7 @@
 
 #include <cstddef>
 #include <cstdlib>
+#include <new>
 
 template<typename T, const size_t reserveSize>
 class Storage
