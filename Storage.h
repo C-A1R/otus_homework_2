@@ -2,6 +2,7 @@
 #define STORAGE_H
 
 #include <cstddef>
+#include <exception>
 
 template<typename T, const size_t reserveSize>
 class Storage

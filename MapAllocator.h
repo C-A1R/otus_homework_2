@@ -4,7 +4,6 @@
 #include "Storage.h"
 
 #include <cstddef>
-#include <exception>
 
 
 template<typename T, size_t reserveSize = 1>
