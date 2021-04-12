@@ -1,6 +1,8 @@
 #ifndef STORAGE_H
 #define STORAGE_H
 
+#include <cstddef>
+
 template<typename T, const size_t reserveSize>
 class Storage
 {
