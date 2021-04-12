@@ -40,7 +40,7 @@ int main (int, char **)
     }
 
     // 2  
-    std::map<int, int, std::less<int>, MapAllocator<std::pair<int, int>, N > > new_allocator_map;
+    std::map<int, int, std::less<int>, MapAllocator<std::pair<const int, int>, N > > new_allocator_map;
     for (int i = 0; i < N; ++i)    
     {
         new_allocator_map.insert(std::make_pair(i, factorial(i)));

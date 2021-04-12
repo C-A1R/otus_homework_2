@@ -3,6 +3,7 @@
 
 #include "Storage.h"
 
+#include <stddef.h> 
 
 template<typename T, size_t reserveSize = 1>
 struct MapAllocator

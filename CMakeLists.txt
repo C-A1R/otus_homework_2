@@ -6,7 +6,7 @@ else ()
     project(allocator VERSION 0.0.1)
 endif ()
 
-# set(BOOST_ROOT C:/boost_1_75_0)
+set(BOOST_ROOT C:/boost_1_75_0)
 
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
@@ -17,7 +17,7 @@ add_library(allocator lib.cpp)
 add_executable(test_version test_version.cpp)
 
 set_target_properties(allocator_cli allocator test_version PROPERTIES
-    CXX_STANDARD 14
+    CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON
 )
 target_include_directories(allocator

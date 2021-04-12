@@ -34,7 +34,7 @@ public:
     void append(const T &data)
     {
         Node *newNode = nodeAllocator.allocate(1);
-        allocator.construct(newNode, Node(data));
+        std::allocator_traits<A>::construct(allocator, newNode, Node(data));
         if (last)
         {
             last->next = newNode;
@@ -95,7 +95,7 @@ private:
 
     void destroy(Node *node)
     {
-        allocator.destroy(&node->data);
+        std::allocator_traits<A>::destroy(allocator, &node->data);
         nodeAllocator.deallocate(node, 1);
     }
 };
